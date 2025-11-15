@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Prénom Nom</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">SEFANDE  <span class="accent">Aser Josias Massama</span></div>
+      <nav>
+        <ul>
+          <li><a class="active" href="#">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Je suis <span class="accent">Aser</span>, Andragogue et Développeur web.</h1>
+        <p>Passionné par l'Andragogie, la programmation web et le design !</p>
+        <a class="cta" href="#projects">Voir mes projets</a>
+      </div>
+      <div class="hero-illus">
+        <div class="illus-placeholder"></div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-inner">
+        <div class="about-text">
+          <h3 class="accent center">À propos</h3>
+          <p>Bonjour ! Je m'appelle <strong>SEFANDE Aser Josias Massama</strong>, étudiant en Andragogie et passionné par les technologies éducatives et le développement web.  
+      Curieux et créatif, j'aime explorer de nouvelles façons de communiquer, d'apprendre et de partager des idées.  
+      Mon objectif est de créer des expériences interactives et enrichissantes qui inspirent et connectent les gens.</p>
+          <p>En dehors de mes études, je suis passionné par le montage vidéo, la création graphique et la programmation.  
+      J'aime transformer les idées en projets concrets et développer mes compétences pour contribuer à des initiatives innovantes.</p>
+          <a class="btn-cv" href="#">Télécharger mon CV</a>
+        </div>
+        <div class="avatar"><img src="me.png" /></div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h3 class="accent center">Mes Projets</h3>
+      <div class="projects-grid">
+        <article class="card">
+          <p>Un mini-jeu interactif en JavaScript.</p>
+          <div class="tags">#html #css #js</div>
+          <a class="btn" href="#">Voir</a>
+        </article>
+        <article class="card">
+          <p>Un mini-jeu interactif en JavaScript.</p>
+          <div class="tags">#html #css #js</div>
+          <a class="btn" href="#">Voir</a>
+        </article>
+        <article class="card">
+          <p>Un mini-jeu interactif en JavaScript.</p>
+          <div class="tags">#html #css #js</div>
+          <a class="btn" href="#">Voir</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="skills-inner">
+        <div class="skill-card">
+          <h4 class="skill-title">Soft Skills</h4>
+          <div class="skill-row">Gestion de projet<div class="bar"><i style="width:82%"></i></div></div>
+          <div class="skill-row">Résolution de problème<div class="bar"><i style="width:66%"></i></div></div>
+          <div class="skill-row">Adaptabilité<div class="bar"><i style="width:90%"></i></div></div>
+          <div class="skill-row">Leadership<div class="bar"><i style="width:90%"></i></div></div>
+        </div>
+
+        <div class="skill-card">
+          <h4 class="skill-title">Hard Skills</h4>
+          <div class="skill-row">HTML<div class="bar"><i style="width:95%"></i></div></div>
+          <div class="skill-row">CSS<div class="bar"><i style="width:88%"></i></div></div>
+          <div class="skill-row">Python<div class="bar"><i style="width:70%"></i></div></div>
+          <div class="skill-row">MySQL<div class="bar"><i style="width:80%"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Vous avez un <span class="accent">projet en tête ?</span></h2>
+      <form id="contactForm" class="contact-form">
+        <div class="row">
+          <input type="text" id="prenom" placeholder="Votre prénom" required />
+          <input type="text" id="nom" placeholder="Votre nom" required />
+        </div>
+        <input type="text" id="sujet" placeholder="Votre sujet" required />
+        <textarea id="message" placeholder="Message..." required></textarea>
+        <button type="submit" class="send">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
